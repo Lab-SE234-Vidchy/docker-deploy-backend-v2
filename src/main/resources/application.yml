@@ -3,3 +3,8 @@ graphql:
     enabled: true
     mapping: /graphql
     corsEnabled: false
+    
+spring:
+  graphql:
+    graphiql:
+      enabled: true
