@@ -1,7 +1,14 @@
+# services:
+#   backend:
+#     image: khakee1234/234-deploylab-backend:latest
+#     pull_policy: always
+#     ports:
+#       - "8082:8080"
+#     restart: unless-stopped
 services:
   backend:
     image: khakee1234/234-deploylab-backend:latest
     pull_policy: always
     ports:
-      - "8082:8080"
+      - "8083:8080"
     restart: unless-stopped
