@@ -4,9 +4,11 @@ on:
   push:
     branches:
       - main
+      - new-grade-criteria
   pull_request:
     branches:
       - main
+      - new-grade-criteria
 
 jobs:
   build:
@@ -31,7 +33,7 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-backend:latest
-          
+
       - name: Copy file via ssh password
         uses: appleboy/scp-action@v1
         with:
